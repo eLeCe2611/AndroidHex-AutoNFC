@@ -17,25 +17,41 @@
         android:hint="Ej: 4C000000B3FFFFFF4C00000000FF00FF"
         android:inputType="textNoSuggestions" />
 
+    <Button
+        android:id="@+id/btnCheckUnits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="CONSULTAR UNIDADES ACTUALES" />
+
+    <TextView
+        android:id="@+id/tvCurrentUnits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Unidades actuales: -"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Unidades reales a sumar:" />
+        android:layout_marginTop="24dp"
+        android:text="Unidades a sumar (números enteros):" />
 
     <EditText
         android:id="@+id/etUnitsInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Ej: 20"
+        android:hint="Ej: 1 (sumará 200 internas)"
         android:inputType="number" />
 
     <Button
         android:id="@+id/btnCalculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="CALCULAR" />
+        android:layout_marginTop="16dp"
+        android:text="CALCULAR NUEVA CADENA" />
 
     <TextView
         android:layout_width="match_parent"
@@ -52,5 +68,12 @@
         android:text="..."
         android:textSize="18sp"
         android:textIsSelectable="true" />
+
+    <Button
+        android:id="@+id/btnCopy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="COPIAR RESULTADO" />
 
 </LinearLayout>
